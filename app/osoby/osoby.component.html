@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+       
+        
+      <app-czlowiek class="col col-sm-6 col-md-4 col-lg-2"
+        *ngFor="let czlowiek of listaosob"
+        [czlowiek]="czlowiek" [ngStyle]="{'background-color': (czlowiek.plec == 'Kobieta') ? 'pink' : 'lightblue'}">
+      </app-czlowiek> 
+    
+   
+    </div>
+</div>
